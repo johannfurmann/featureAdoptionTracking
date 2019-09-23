@@ -1,0 +1,8 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes" access="global" controller="AdoptionCounter">
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    <aura:method name="increaseCount" action="{!c.increaseCount}" access="PUBLIC"/> 
+    <aura:attribute name="fireOnInit" type="Boolean" default="true"/>        
+    
+    <aura:attribute name="action" type="String"/>        
+    <aura:attribute name="feature" type="String"/>	
+</aura:component>
